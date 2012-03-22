@@ -47,7 +47,7 @@ var implement = function(obj){
 	return this
 }
 
-var prime = function(proto){
+exports: var prime = function(proto){
 
 	var superprime = proto.inherits, superproto
 	if (superprime) superproto = superprime.prototype
@@ -85,4 +85,4 @@ prime.each = each
 prime.has = has
 prime.create = create
 
-module.exports = prime
+var module; if (module) module.exports = prime
